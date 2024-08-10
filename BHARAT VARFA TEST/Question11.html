@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Take a string and convert it into array
+        let str="bharat";
+        let len=0;
+        for(let i=0;str[i]!=undefined;i++){
+            len++;
+        }
+        document.write(len);
+        const arr =new Array(len);
+        for(let i=0;i<len;i++){
+            arr[i]=str[i];
+        }
+        document.write("<br>")
+        
+        document.write(arr);
+
+    </script>
+</body>
+</html>
