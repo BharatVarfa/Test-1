@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          let num = parseInt(prompt("enter a number:-"));
+           let mid = Math.floor(num/2),f = true;
+          for(let i=2; i<=mid ;i++){
+            if(num % i === 0 ){
+                f = false ;
+                break;
+            }
+          }
+          if(f){
+            document.write("Prime number");
+          }
+          else{
+            document.write("Not a Prime number");
+          }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "aaKaSh",newString="",newString1="";
+        /* newString = str.toLowerCase(); */
+
+        for(let i = 0 ; str[i] != undefined ;i++ ){
+
+            if( str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90 ){
+                newString = newString +String.fromCharCode((str.charCodeAt(i)+32));
+            }
+            else{
+               newString = newString +str[i];
+            }
+        }
+        document.write("string in lower case:- "+newString+"<br>");
+       /*  newString = str.toUpperCase();*/
+        for(let i = 0 ; str[i] != undefined ;i++ ){
+
+            if( !(str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90) ){
+                newString1 = newString1 +String.fromCharCode((str.charCodeAt(i)-32));
+            }
+            else{
+               newString1 = newString1 +str[i];
+            }
+        }
+        document.write("string in Upper case:- "+newString1+"<br>");
+       /*  newString = str.length; */
+        let count=0;
+       for(let i = 0 ; str[i] != undefined ;i++ ){
+        count++;
+       }
+       newString = count;
+       document.write("string  length:- "+newString+"<br>"); 
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = [1,2,3,4,6,6,1,3,7];
+        /* document.write(numbers.sort()+"<br>");
+       
+        let max = numbers[0];
+        document.write("maximum number is :-" + max+"<br>");
+        let min = numbers[(numbers.length - 1)];
+        document.write("maximum number is :-" + max+"<br>");
+
+       for(let i=0 ;i< numbers.length -1 ;i++){
+            if(numbers[i] === numbers[i+1]){
+                numbers.splice(i+1,1);
+            }
+        } 
+        document.write(numbers); */
+         let min = numbers[0] ;
+
+      for(let i=0 ;i<= 8 ;i++){
+            if(numbers[i] < min ){
+                min = numbers[i] ;
+            }
+        } 
+        document.write(numbers + "<br>"); 
+        document.write("minimum number is :-" + min+"<br>");
+
+
+        let max = numbers[0] ;
+
+      for(let i=0 ; i<= 8 ;i++){
+            if(numbers[i] > max ){
+                max = numbers[i] ;
+            }
+        } 
+        
+        document.write("maximum number is :-" + max+"<br>");
+        for(let i=0 ; i <= 7 ;i++){
+            for(let j=0 ; j <= 6 ;j++){
+            if(numbers[j] > numbers[j+1]){
+                let temp = numbers[j];
+                numbers[j] = numbers[j+1];
+                numbers[j+1] = temp ;
+            }  
+            }
+        }  
+        document.write(numbers+"<br>"); 
+        let j=9;
+        let newArray = [];
+        for(let i=0 ; i <= 7 ;i++){
+            if(numbers[i] === numbers[i+1]){
+                for(let k=i+1 ;k <= 7 ;k++){
+                    numbers[k] = numbers[k+1];
+                }
+               if(numbers[i] != max){
+                j--;
+               }
+            }
+        }
+        document.write(numbers+"<br>"); 
+
+        for(let i=0 ; i<j;i++){
+            newArray[i] = numbers[i];
+        }
+        document.write(newArray); 
+    </script>
+</body>
+</html>
